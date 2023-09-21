@@ -1,0 +1,123 @@
+/*Estilos generales para todos los proyectos*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+    line-height: 1.5;
+    background-color: hsla(20, 100%, 50%, .5);
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.opcion {
+    position: absolute;
+    top: 2.5em;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.opcion:hover {
+    opacity: .8;
+}
+
+.opcion:active {
+    transform: scale(.9);    
+}
+
+.img {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    cursor: pointer;
+}
+
+.papel:hover,
+.piedra:hover,
+.tijera:hover {
+    transform: scale(1.1);
+}
+
+.papel:active,
+.piedra:active,
+.tijera:active {
+    transform: scale(.9);
+    transition-delay: all 1s;
+}
+
+.user, 
+.com {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px black;
+    position: absolute;
+    top: 2.5em;
+    background: hsla(20, 100%, 60%, .5) no-repeat center center;  
+}
+
+.user {
+    left: 2.5em;
+}
+
+.com {
+    right: 2.5em;
+}
+
+.user-img,
+.com-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 18px 18px;
+}
+
+.user-text, 
+.com-text {
+    position: absolute;
+    top: 100px;
+    margin: 0 auto;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.user-text {
+    left: 12.5%;
+}
+
+.com-text {
+    left: 30%;
+}
+
+.jugar {
+    position: absolute;
+    top: 3.5em;
+    left: 168px;
+    display: none;
+    cursor: pointer;
+}
+ 
+.jugar:hover {
+    transform: scale(1.1);
+    opacity: .95;
+}
+ 
+.jugar:active {
+    transform: scale(.9);
+    opacity: 1; 
+}
